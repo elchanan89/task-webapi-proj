@@ -1,0 +1,28 @@
+#wrapper{
+	direction: rtl;
+    margin: 100px 35% 20px 35%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    background: white;
+	padding: 2rem !important;
+}
+
+#headline{
+	margin-top:0;
+	font-size:16px;
+	margin: 0;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#select{
+	border: 1px solid #ccc;
+    padding: 4px 4px 4px 0;
+    width: 100%;
+    border-radius: 2px !important;
+	cursor:pointer;
+}
+
+.label{
+	font-family: sans-serif;
+    font-size: small;
+}

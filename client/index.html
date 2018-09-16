@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>WebAPI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="app.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src='app.js'></script>
+</head>
+
+<body ng-app='app-webapi'>
+
+	<!-- Main section -->
+	<div id='wrapper' ng-controller='ctrlApi'>
+		<p id='headline'>בחר עיר מהרשימה</p>
+
+		<hr>
+
+		<select id='select' ng-model='selected' ng-change='onSelect()'>
+			<option ng-repeat='city in cities' value="{{city}}" class='option'>
+				{{city.city_name}}
+			</option>
+		</select>
+
+		<hr>
+
+		<label class='label' ng-if='cityStreets'>רשימת רחובות</label>
+		<select id='select' ng-if='cityStreets'>
+			<option ng-repeat='street in cityStreets' value="{{street}}" class='option'>
+				{{street}}
+			</option>
+		</select>
+	</div>
+
+</body>
+
+</html>
